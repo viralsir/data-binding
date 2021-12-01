@@ -1,0 +1,14 @@
+<p>template-ref works!</p>
+Name : <input type="text" #nameref>
+<br/>
+<input type="button" value="click here" (click)="passValue(nameref)">
+<br/>
+<h2>{{msg}}</h2>
+
+<h2>Calculator </h2>
+No1 : <input type="number" #no1> <br/>
+No2 : <input type="number" #no2> <br/>
+<input type="button" value="Add" (click)="addValue(no1,no2)">
+
+<br/>
+<h2>Sum is {{sum}}</h2>
