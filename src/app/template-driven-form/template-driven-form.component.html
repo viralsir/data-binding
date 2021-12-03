@@ -1,0 +1,13 @@
+<p>template-driven-form works!</p>
+<form #loginformRef="ngForm" (ngSubmit)="checkUser(loginformRef)" >
+  <label> UserName :</label>
+  <input type="text" name="user" ngModel minlength="2" required>
+  <br/>
+  <label>Password :</label>
+  <input type="password" name="pass" ngModel required>
+  <br/>
+  <input type="submit" value="login" [disabled]="loginformRef.invalid" >
+  <input type="reset" value="clear">
+</form>
+<h1>{{msg}}</h1>
+<h2>{{loginformRef.invalid}}</h2>

@@ -1,0 +1,12 @@
+<p>model-driven-form works!</p>
+<form [formGroup]="loginRef" (ngSubmit)="checkUser()" >
+  <label>UserName :</label>
+  <input type="text" name="user" formControlName="user"/>
+  <br/>
+  <label >Password :</label>
+  <input type="password" formControlName="pass"/>
+  <br/>
+  <input type="submit" value="login" [disabled]="loginRef.invalid">
+  <input type="reset" value="clear">
+</form>
+<h1>{{msg}}</h1>
